@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Rumah Sakit Waras</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1>Selamat Datang<br>Di rumah Sakit Waras</h1>
+	<div class="contain">
+		<!-- input pasien -->
+		<div class="data-pasien">
+			<p>Masukkan Data Pasien</p>
+			<input type="text" placeholder="Nama Pasien" id="nama">
+			<input type="text" placeholder="Alamat" id="alamat">
+			<input type="text" placeholder="No.Telp" id="telp">
+			<button type="button" id="data">Next</button>
+		</div>
+
+		<!-- pilihan poli -->
+		<div class="poli">
+			<p>Nama Poli :</p>
+			<ol type="1">
+				<li>Gigi</li>
+				<li>Anak</li>
+				<li>Umum</li>
+			</ol>
+			<br>
+			<p>Pilih Poli [ 1/2/3 ]</p>
+			<input type="text" placeholder="Pilih Poli" id="poli">
+			<br>
+			<button type="button" id="poli-btn">Next</button>
+		</div>
+		
+		<!-- pilih dokter -->
+		<div class="dokter">
+			<p>Nama Dokter :</p>
+			<ol type="1">
+				<li>Drg. Ahmad Afandi</li>
+				<li>Dr. Arid Wicaksono, Sp.A.</li>
+				<li>Dr Alfia Putri</li>
+			</ol>
+			<br>
+			<p>Pilih Dokter [ 1/2/3 ]</p>
+			<input type="text" placeholder="Pilih Dokter" id="dokter">
+			<br>
+			<button type="button" id="dokter-btn">Next</button>
+		</div>
+
+		<!-- keterangan -->
+		<div class="keterangan">
+			<p>Berikan Keterangan Dokter :</p>
+			<textarea id="keterangan" placeholder="Keterangan"></textarea>
+			<br>
+			<button type="button" id="keterangan-btn">Next</button>
+		</div>
+	
+		<!-- administrasi -->
+		<div class="administrasi">
+			<p>masukan biaya pendaftaran</p>
+			<input type="text" id="biaya" placeholder="Biaya Daftar">	
+			<p>masukan biaya obat</p>
+			<input type="text" id="obat" placeholder="Biaya Obat">
+			<p>masukan biaya vitamin</p>
+			<input type="text" id="vitamin" placeholder="Biaya Vitamin">
+			<p>masukan biaya dokter</p>
+			<input type="text" id="periksa" placeholder="Biaya Dokter"> 
+			<button type="button" id="admin-btn">Next</button>
+		</div>
+
+		<!-- hasil -->
+		<div class="hasil">
+			<div class="desc"></div>
+		</div>
+	</div>	
+
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(memphis-mini.png);
+}
+
+/*container*/
+h1 {
+	text-align: center;
+	margin-top: 35px;
+	margin-bottom: 25px;
+	text-transform: uppercase;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	color: darkslateblue;
+}
+
+.contain {
+	background-color: darkslateblue;
+	color: white;
+	width: 50%;
+	margin: auto;
+	padding: 30px 0;
+	border-radius: 10px;
+}
+
+.contain .poli, .dokter, .keterangan, .administrasi {
+	border: 2px solid paleturquoise;
+	width: 88%;
+	margin: auto;
+	padding: 55px 40px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+	color: paleturquoise;
+	font-size: 16px;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+	display: none; 
+}
+
+.contain ol {
+	margin-left: 15px;
+	line-height: 25px;
+}
+
+/*data pasien*/
+.contain .data-pasien {
+	border: 2px solid paleturquoise;
+	width: 88%;
+	margin: auto;
+	padding: 55px 30px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius: 10px;
+	color: paleturquoise;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.contain .data-pasien p {
+	text-align: center;
+	margin-bottom: 20px;
+	font-size: 20px;
+}
+
+.contain .data-pasien input {
+	width: 300px;
+	height: 25px;
+	margin: auto;
+	margin-bottom: 10px;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	outline-color: paleturquoise;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.contain .data-pasien button {
+	width: 80px;
+	height: 22px;
+	margin: auto;
+	margin-top: 8px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	background-color: paleturquoise;
+}
+
+.contain .data-pasien button:hover {
+	background-color: lightgrey;
+}
+
+/*poli*/
+.contain .poli input {
+	width: 100px;
+	height: 25px;
+	margin: 8px 0;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	outline-color: paleturquoise;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.contain .poli button {
+	width: 80px;
+	height: 22px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: paleturquoise
+}
+
+.contain .poli button:hover {
+	background-color: lightgrey;
+}
+
+/*dokter*/
+.contain .dokter input {
+	width: 100px;
+	height: 25px;
+	margin: 8px 0;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	outline-color: paleturquoise;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.contain .dokter button {
+	width: 80px;
+	height: 22px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: paleturquoise
+}
+
+.contain .dokter button:hover {
+	background-color: lightgrey;
+}
+
+/*keterangan*/
+.contain #keterangan {
+	width: 350px;
+	height: 100px;
+	margin: 8px 0;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	outline-color: paleturquoise;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.contain .keterangan button {
+	width: 80px;
+	height: 22px;
+	border: none;
+	border-radius: 5px;
+	margin-top: 5px;
+	background-color: paleturquoise
+}
+
+.contain .keterangan button:hover {
+	background-color: lightgrey;
+}
+
+/*administrasi*/
+.contain .administrasi p {
+ 	text-transform: capitalize;
+}
+
+.contain .administrasi input {
+	width: 100%;
+	height: 25px;
+	margin: 8px auto;
+	border: none;
+	padding: 5px;
+	border-radius: 5px;
+	outline-color: paleturquoise;
+	font-family: Calibri, Candara, Segoe, "Segoe UI", Optima, Arial, sans-serif;
+}
+
+.contain .administrasi button {
+	width: 80px;
+	height: 22px;
+	margin: auto;
+	margin-top: 12px;
+	border: none;
+	border-radius: 5px;
+	background-color: paleturquoise;
+}
+
+.contain .administrasi button:hover {
+	background-color: lightgrey;
+}
+
+/*hasil*/
+.contain .hasil {
+	border: 2px solid paleturquoise;
+	width: 88%;
+	margin: auto;
+	padding: 30px 35px;
+	border-radius: 10px;
+	color: paleturquoise;
+	display: none;
+}
+
+/*responsive*/
+@media screen and (max-width: 800px) {
+	.contain {
+		width: 460px;
+	}
+
+	.contain .data-pasien input {
+		width: 100%;
+	}
+
+	.contain #keterangan {
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	h1 {
+		font-size: 25px;
+	}
+
+	.contain {
+		width: 350px;
+	}
+
+	.contain .poli, .dokter, .keterangan, .administrasi {
+		font-size: 15px;
+	}
+
+	.contain .data-pasien p {
+		font-size: 18px;
+
+	}
+}
+
+@media screen and (max-width: 380px) {
+	h1 {
+		font-size: 24px;
+	}
+
+	.contain {
+		width: 310px;
+	}	
+}
+
+@media screen and (max-width: 350px) {
+	h1 {
+		font-size: 23px;
+	}
+
+	.contain {
+		width: 280px;
+	}	
+}
+
+
